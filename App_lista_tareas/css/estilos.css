@@ -8,7 +8,7 @@
 
 body {
 	background: #FAFAFA;
-	font-family: arial, helvetica, sans-serif;
+	font-family: 'Times New Roman', Times, serif;
 	font-size: 16px;
 }
 
@@ -19,7 +19,7 @@ body {
 }
 
 .principal {
-	background: #F44336;
+	background: #181717;
 	border-top: 20px solid #D32F2F;
 	color: #fff;
 	padding: 50px 0;
@@ -29,6 +29,7 @@ body {
 .principal .formulario {
 	color: #212121;
 	text-align: center;
+
 }
 
 .principal .formulario input[type=text] {
@@ -44,11 +45,12 @@ body {
 
 .principal .formulario .boton {
 	background: none;
-	border: 1px solid #D32F2F;
+	border: 1px solid #971e1e;
 	color: #fff;
 	display: inline-block;
 	font-size: 16px;
 	padding: 15px;
+	border-radius: 25px;
 }
 
 .principal .formulario .boton:hover {
@@ -58,6 +60,7 @@ body {
 /* - Tareas - */
 .tareas .lista {
 	list-style: none;
+	text-align: center;
 }
 
 .tareas .lista li {
