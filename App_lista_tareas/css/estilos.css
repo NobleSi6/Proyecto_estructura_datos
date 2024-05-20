@@ -12,6 +12,10 @@ body {
 	font-size: 16px;
 }
 
+.arbolBinario{
+	margin: auto;
+}
+
 .wrap {
 	margin: auto;
 	max-width: 800px;

@@ -1,14 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<meta name="viewport"
+		content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" href="css/estilos.css">
 	<link rel="stylesheet" href="https://necolas.github.io/normalize.css/3.0.2/normalize.css">
 	<title>Lista de Tareas</title>
 </head>
+
 <body>
+	<br>
+	<div class="arbolBinario">
+		<ion-icon name="search-outline"></ion-icon>
+		<input type="text" id="busqueda" placeholder="Buscar...">
+
+	</div>
+	<br>
 	<div class="principal">
+
 		<div class="wrap">
 			<form class="formulario" action="">
 				<input type="text" id="tareaInput" placeholder="Agrega tu tarea">
@@ -24,6 +35,9 @@
 			</ul>
 		</div>
 	</div>
+	<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+	<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 	<script src="js/main.js"></script>
 </body>
+
 </html>
