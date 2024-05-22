@@ -12,9 +12,16 @@
 
 <body>
 	<br>
-	<div class="arbolBinario">
-		<ion-icon name="search-outline"></ion-icon>
-		<input type="text" id="busqueda" placeholder="Buscar...">
+	<div class="search-container">
+		<ion-icon name="search-outline" class="iconoBusqueda"></ion-icon>
+		<input type="text" id="searchBar" placeholder="...">
+		<button id="btn-buscar">Buscar</button>
+		
+		<div class="resultSearch">
+			<ul id="resultsList">
+				<!-- Los resultados de búsqueda aparecerán aquí -->
+			</ul>
+		</div>
 
 	</div>
 	<br>

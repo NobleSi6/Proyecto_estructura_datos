@@ -7,13 +7,22 @@
 }
 
 body {
-	background: #FAFAFA;
+	background: #30383f;
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 16px;
 }
-
-.arbolBinario{
+#searchBar{
+	border-radius: 25px;
+	text-align: center;
+		text-align: center;
+	padding-left: 20px;
+}
+.search-container{
 	margin: auto;
+	padding-left: 20px;
+}
+.iconoBusqueda{
+	color: #fff;
 }
 
 .wrap {
@@ -28,6 +37,7 @@ body {
 	color: #fff;
 	padding: 50px 0;
 	width: 100%;
+	border-radius: 20px;
 }
 
 .principal .formulario {
@@ -72,7 +82,7 @@ body {
 }
 
 .tareas .lista li a {
-	color: #212121;
+	color: #ece4e4;
 	display: block;
 	padding: 20px 0;
 	text-decoration: none;
@@ -80,4 +90,22 @@ body {
 
 .tareas .lista li a:hover {
 	text-decoration: line-through;
+}
+
+#resultsList{
+	color: #0e0d0d;
+}
+
+.resultSearch{
+	margin: 10px;
+	border-radius: 20px;
+	padding-left: 25px;
+	background-color: #f1ebeb;
+}
+
+#btn-buscar{
+	border-radius: 5px;
+	background-color: #d6d4d4;
+	padding-right: 10px;
+	
 }
