@@ -7,21 +7,24 @@
 }
 
 body {
-	background: #30383f;
+	background: #1d2022;
 	font-family: 'Times New Roman', Times, serif;
 	font-size: 16px;
 }
-#searchBar{
+
+#searchBar {
 	border-radius: 25px;
 	text-align: center;
-		text-align: center;
-	padding-left: 20px;
+	text-align: center;
+	padding: 8px 32px;
 }
-.search-container{
+
+.search-container {
 	margin: auto;
 	padding-left: 20px;
 }
-.iconoBusqueda{
+
+.iconoBusqueda {
 	color: #fff;
 }
 
@@ -57,6 +60,8 @@ body {
 	color: red;
 }
 
+/*---------------ESTILO DEL BOTON---------------*/
+/*
 .principal .formulario .boton {
 	background: none;
 	border: 1px solid #971e1e;
@@ -66,10 +71,32 @@ body {
 	padding: 15px;
 	border-radius: 25px;
 }
-
+*/
+/*
 .principal .formulario .boton:hover {
 	border: 1px solid #fff;
 }
+*/
+
+
+.principal .formulario .boton {
+	background: rgb(59, 58, 58);
+		cursor: pointer;
+		border: none;
+		padding: 10px 30px;
+		color: azure;
+		font-size: 13px;
+		font-weight: bold;
+		position: relative;
+		border-radius: 12px;
+}
+
+
+.principal .formulario .boton:hover {
+	border: 3px solid #D32F2F;
+}
+
+
 
 /* - Tareas - */
 .tareas .lista {
@@ -78,11 +105,11 @@ body {
 }
 
 .tareas .lista li {
-	border-bottom: 1px solid #B6B6B6;
+	border-bottom: 15px solid #B6B6B6;
 }
 
 .tareas .lista li a {
-	color: #ece4e4;
+	color: #fcfbfb;
 	display: block;
 	padding: 20px 0;
 	text-decoration: none;
@@ -92,20 +119,56 @@ body {
 	text-decoration: line-through;
 }
 
-#resultsList{
+#resultsList {
 	color: #0e0d0d;
 }
 
-.resultSearch{
+.resultSearch {
 	margin: 10px;
 	border-radius: 20px;
 	padding-left: 25px;
 	background-color: #f1ebeb;
 }
 
-#btn-buscar{
-	border-radius: 5px;
-	background-color: #d6d4d4;
-	padding-right: 10px;
-	
+/*----------------BOTON PARA BUSQUEDA*/
+
+#btn-buscar {
+	background: black;
+	cursor: pointer;
+	border: none;
+	padding: 10px 30px;
+	color: azure;
+	font-size: 13px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 12px;
+}
+
+#btn-buscar:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, red, rgb(27, 27, 29), rgb(39, 32, 36), rgb(35, 35, 43), red, rgb(17, 17, 22), deeppink, rgb(33, 33, 37));
+	background-size: 800%;
+	border-radius: 12px;
+	filter: blur(8px);
+	animation: glowing 20s linear infinite;
+}
+
+@keyframes glowing {
+	0% {
+		background-position: 0 0;
+	}
+
+	50% {
+		background-position: 400% 0;
+	}
+
+	100% {
+		background-position: 0 0;
+	}
 }
