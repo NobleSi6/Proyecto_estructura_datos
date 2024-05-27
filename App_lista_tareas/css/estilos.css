@@ -158,7 +158,58 @@ body {
 	filter: blur(8px);
 	animation: glowing 20s linear infinite;
 }
+#btn-historial {
+	background: black;
+	cursor: pointer;
+	border: none;
+	padding: 10px 30px;
+	color: azure;
+	font-size: 13px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 12px;
+}
 
+#btn-historial:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, red, rgb(27, 27, 29), rgb(39, 32, 36), rgb(35, 35, 43), red, rgb(17, 17, 22), deeppink, rgb(33, 33, 37));
+	background-size: 800%;
+	border-radius: 12px;
+	filter: blur(8px);
+	animation: glowing 20s linear infinite;
+}
+#btn-volver {
+	background: black;
+	cursor: pointer;
+	border: none;
+	padding: 10px 30px;
+	color: azure;
+	font-size: 13px;
+	font-weight: bold;
+	position: relative;
+	border-radius: 12px;
+}
+
+#btn-volver:hover::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(45deg, red, rgb(27, 27, 29), rgb(39, 32, 36), rgb(35, 35, 43), red, rgb(17, 17, 22), deeppink, rgb(33, 33, 37));
+	background-size: 800%;
+	border-radius: 12px;
+	filter: blur(8px);
+	animation: glowing 20s linear infinite;
+}
 @keyframes glowing {
 	0% {
 		background-position: 0 0;
