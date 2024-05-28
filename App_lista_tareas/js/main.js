@@ -181,9 +181,9 @@ class BinarySearchTree {
 		
 			// Agregar evento de mouseover
 			elementos[i].addEventListener("mouseover", function(event) {
-				event.target.style.backgroundColor = "rgba(100, 255, 80, 0.5)";
+				event.target.style.backgroundColor = "rgba(100, 255, 80, 0.4)";
 				var completado = document.createElement("span");
-				completado.textContent = "Completar";
+				completado.textContent = "";
 				completado.style.color = "white";
 				completado.style.position = " absolute";
 				completado.style.fontSize = "large";

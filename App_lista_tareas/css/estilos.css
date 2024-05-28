@@ -158,8 +158,12 @@ body {
 	filter: blur(8px);
 	animation: glowing 20s linear infinite;
 }
+
+.historial{
+	padding-left: 50px;
+}
 #btn-historial {
-	background: black;
+	background: rgb(110, 1, 1);
 	cursor: pointer;
 	border: none;
 	padding: 10px 30px;
